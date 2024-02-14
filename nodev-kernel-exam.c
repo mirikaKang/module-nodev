@@ -21,13 +21,13 @@
 
 int init_module(void)
 {
-	printk("start nodev kernel module!\n");
+	pr_info("start nodev kernel module!\n");
 	return 0;
 }
 
 void cleanup_module(void)
 {
-	printk("Goodbye nodev kernel module!\n");
+	pr_info("Goodbye nodev kernel module!\n");
 }
 
 MODULE_LICENSE("GPL");
