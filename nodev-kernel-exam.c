@@ -19,6 +19,10 @@
 
 #include <linux/module.h>
 
+static unsigned int log_level=666;
+
+module_param( log_level,uint,0644);
+
 int init_module(void)
 {
 	pr_info("start nodev kernel module!\n");
